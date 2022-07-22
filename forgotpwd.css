@@ -1,0 +1,156 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Josefin Sans',sans-serif;
+
+}
+.content{
+	height:1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #111;
+}
+body{
+	height:  100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #111;
+}
+.title{
+    color:#FFF;
+    margin-bottom: 15px;
+}
+.form{
+	z-index: 1;
+	font-family:"Poppins",sans-serif;
+	position: absolute;
+	width: 320px;
+	text-align: center;
+}
+.form i{
+	z-index: 1;
+	color: #ccc;
+	font-size: 65px;
+	margin-bottom: 30px;
+}
+.form .signup-form{
+	display: none;
+	
+}
+.form .user-input{
+	width: 320px;
+	height: 55px;
+	margin-bottom: 30px;
+	outline: none;
+	border: 1px solid white;
+	background-color: transparent;
+	color: #fff;
+	font-size: 17px;
+	text-align: center;
+	border-radius: 30px;
+	transition: 0.5s;
+	transition-property: border-left,border-right,box-shadow;
+
+}
+.form .user-input:hover, .form .user-input:focus, .form .user-input:active{
+	
+	box-shadow: 0 0 100px rgba(66,133,244,0.8);
+    transform: scale(1.2);
+}
+.form.options-01{
+	margin-bottom: 50px;
+}
+.form .options-01 input{
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+.form .options-01 .remember-me{
+	color: #bbb;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	float: left;
+	cursor: pointer;
+
+}
+.form .options-01 a{
+	color :#888;
+	font-size: 14px;
+	font-style: italic;
+	float: right;
+}
+.form .btn{
+	outline: none;
+	border: none;
+	width: 320px;
+	height: 55px;
+	background: transparent;
+    border: 1px solid red;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	border-radius: 30px;
+	cursor: pointer;
+	margin-top: 20px;
+	transition: 0.5s;
+	transition-property: border-left , border-right , box-shadow;
+
+
+
+}
+.form .btn:hover{
+
+	box-shadow: 0 0 100px rgba(66,133,2);
+    transform: scale(1.2);
+    background-color: red;
+}
+.form .option-02{
+	color: #bbb;
+	font-size: 14px;
+	margin-top: 30px;
+}
+.form .option-02 a{
+	color: #4285F4;
+}
+/* responsive CSS */
+@media screen and (max-width : 500px){
+	.font{
+		width: 95%;
+	}
+	.form.user-input{
+		width: 100%;
+
+	}
+	.form.btn{
+		width: 100%;
+	}
+}
+select, option {
+    width: 320px;
+    height: 55px;
+    text-align: center;
+    background-color: transparent;
+	color: #888;
+	font-size: 18px;
+    margin-bottom: 30px;
+	outline: none;
+	border: none;
+    border-radius: 30px;
+	border: 1px solid white;
+	transition: 0.5s;
+}
+
+option {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+select:hover{
+   
+	box-shadow: 0 0 100px rgba(66,133,244,0.8);
+}
+
